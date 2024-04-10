@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function op(){
+            var n, s=0, r;
+            n = document.getElementById("number").value;
+            while(n>0){
+                r=n%10;
+                s+=r;
+                n=Math.floor(n/10);
+            }
+            alert(s);
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="number"><br>
+    <button onclick="op()">Click</button>
+</body>
+</html>
